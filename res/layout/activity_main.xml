@@ -1,29 +1,62 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".MainActivity" >
 
-    <TextView
-        android:id = "@+id/ipTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="server's ip" />
-    <TextView
-        android:id = "@+id/portTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="server's port"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+
+
+
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+   
+ 	<TextView
+     	android:text="web server"
+     	android:layout_width="fill_parent" 
+     	android:layout_height="wrap_content"
+     />
+ 	<EditText
+ 	    android:id="@+id/web_server"
+ 	    android:text="http://192.168.1.6/~Xuan/nqueue/1"
+ 	    android:layout_width="fill_parent" 
+     	android:layout_height="wrap_content"
         />
+ 	 
+    <TextView
+     	android:text="restaurant id"
+     	android:layout_width="fill_parent" 
+     	android:layout_height="wrap_content"
+     />
+ 	<EditText
+ 	    android:id="@+id/restaurant_id"
+ 	    android:layout_width="fill_parent" 
+     	android:layout_height="wrap_content"
+     	android:text="1234"
+        /> 
+        
+ 	<TextView
+     	android:text="restaurant name"
+     	android:layout_width="fill_parent" 
+     	android:layout_height="wrap_content"
+     />
+ 	<EditText
+ 	    android:id="@+id/restaurant_name"
+ 	    android:layout_width="fill_parent" 
+     	android:layout_height="wrap_content"
+     	android:text="our restaurant"
+        /> 
+ 	
+     <Button
+         android:id="@+id/beam_button"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="start beam"
+     />
+     
+     
+   
 
-    
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-</RelativeLayout>
+</LinearLayout>
+</ScrollView>

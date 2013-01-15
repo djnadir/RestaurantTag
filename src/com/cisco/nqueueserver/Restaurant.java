@@ -12,10 +12,9 @@ class Restaurant{
 	
 	
 	
-	Restaurant(String name, String server_ip, int server_port){
+	Restaurant(String name, String server_ip){
 		this.name = name;
 		this.server_ip = server_ip;
-		this.server_port = server_port;
 		queue = new ArrayList<Client>();
 	}
 	
